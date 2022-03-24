@@ -1,0 +1,209 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.main-btn:hover {
+  color: #d1a104;
+}
+.main-titel::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  width: 10rem;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: var(--green-color);
+}
+/* start navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+  text-transform: capitalize;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+
+}
+.navbar .navbar-toggler {
+  border-color: white;
+}
+.navbar .navbar-toggler svg {
+  color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]:focus {
+  border-color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+}
+/* end navbar */
+/* start linding */
+.linding {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 70px);
+}
+/* end linding */
+/* start features */
+  .features .icon-header {
+    height: 13rem;
+  }
+  .features .icon-header svg {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .features .icon-header .number {
+    color: var(--section-color);
+    height: 12rem;
+  }
+  .features .icon-header .icon {
+    height: 5rem;
+    color: var(--green-color);
+  }
+  .features h4 {
+    color: var(--yellow-color);
+  }
+/* end features */
+/* start our-work */
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work .list-unstyled li {
+  text-transform: capitalize;
+  padding: .5rem 1rem;
+  transition: 0.3;
+}
+.our-work .list-unstyled li.activ {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+.our-work .list-unstyled li:hover:not(.activ){
+color: var(--red-color);
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33d1cc73;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  transform: translateX(calc(-100% - 10px));
+  transition: 0.3s;
+}
+.our-work .box:hover::before {
+  transform: translateX(0%) ;
+}
+/* end our-work */
+/* start stuff  */
+.stuff .description  {
+  max-width: 40rem;
+}
+/* end stuff  */
+/* start team  */
+.team {
+  background-color: var(--section-color);
+}
+.team h2 {
+  color: var(--yellow-color);
+}
+.team h3 {
+  background-color: var(--green-color);
+}
+/* end team  */
+/* start project  */
+.project {
+  background-color: #19283f;
+}
+/* end project  */
+/* start subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="email"] {
+  border: none;
+  border-bottom: solid 1px white;
+  caret-color: var(--green-color);
+}
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+.subscribe input[type="email"]::placeholder {
+  color: white;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.subscribe input[type="email"]:focus::placeholder {
+  opacity: 0;
+}
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+  transition: 0.3s;
+}
+.subscribe input[type="submit"]:hover {
+  color: #33d1cc;
+}
+/* end subscribe */
+/* start footer  */
+footer {
+  background-color: var(--dark-color);
+}
+footer .contact svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+footer .contact .facebook {
+background-color: #1877f2;
+}
+footer .contact .twitter {
+background-color: #1da1f2;
+}
+footer .contact .linkedin {
+background-color: #0077b5;
+}
+footer .contact .youtube {
+background-color: #ff0000;
+}
+footer .copyright > span {
+  color: var(--green-color);
+}
+footer .copyright div > span {
+  color: var(--yellow-color);
+}
+/* end footer  */
+
+
+
+
